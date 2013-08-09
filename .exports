@@ -2,4 +2,4 @@ export EDITOR=vim
 export VISUAL=geany
 export BROWSER=exo-open
 
-export PATH=$PATH:~/arm-2013.05
+export PATH=$PATH:~/arm-2013.05/bin

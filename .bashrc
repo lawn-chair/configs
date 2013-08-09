@@ -39,25 +39,3 @@ if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
-[ ! "$UID" = "0" ] && mybey
-
-## Greeting
-# from Jonathan's .bashrc file (by ~71KR117)
-# get current hour (24 clock format i.e. 0-23)
-hour=$(date +"%H")
-# if it is midnight to midafternoon will say G'morning
-if [ $hour -ge 0 -a $hour -lt 12 ]
-then
-  greet="Good Morning, $USER. Welcome back."
-# if it is midafternoon to evening ( before 6 pm) will say G'noon
-elif [ $hour -ge 12 -a $hour -lt 18 ]
-then
-  greet="Good Afternoon, $USER. Welcome back."
-else # it is good evening till midnight
-  greet="Good Evening, $USER. Welcome back."
-fi
-# display greeting
-echo $greet
-# set the prompt
-export PS1='\n\w\n\[\e[32m\]$ \[\e[0m\]'
-
