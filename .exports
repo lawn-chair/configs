@@ -1,11 +1,5 @@
-export EDITOR=nano
+export EDITOR=vim
 export VISUAL=geany
 export BROWSER=exo-open
-export GDK_BACKEND=wayland
-export CLUTTER_BACKEND=wayland
-export QT_QPA_PLATFORM=wayland-egl
 
-## Virtualenvwrapper
-#export PROJECT_HOME=$HOME/projects
-#export WORKON_HOME=$HOME/.virtualenvs
-#source /usr/bin/virtualenvwrapper.sh
+export PATH=$PATH:~/arm-2013.05
